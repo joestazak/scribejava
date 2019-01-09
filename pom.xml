@@ -147,7 +147,7 @@
                 <version>3.8.0</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                    <release>7</release>
+                    <!--<release>7</release>-->
                     <showDeprecation>true</showDeprecation>
                 </configuration>
             </plugin>
