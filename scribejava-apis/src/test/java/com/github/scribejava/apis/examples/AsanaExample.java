@@ -22,12 +22,12 @@ public class AsanaExample {
     }
 
     public static void main(String... args) throws IOException, InterruptedException, ExecutionException {
-        final String apiKey = "your client id";
-        final String apiSecret = "your client secret";
+        final String apiKey = "959256988407894";
+        final String apiSecret = "5e937466a22bbfb69847a6c5b1617d60";
         final String secretState = "secret" + new Random().nextInt(999_999);
         final OAuth20Service service = new ServiceBuilder(apiKey)
                 .apiSecret(apiSecret)
-                .callback("https://localhost/")
+                .callback("http://localhost:4080/profile/asana/")
                 .build(Asana20.instance());
         final Scanner in = new Scanner(System.in);
 

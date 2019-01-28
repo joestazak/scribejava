@@ -2,6 +2,7 @@ package com.github.scribejava.apis;
 
 import com.github.scribejava.core.builder.api.DefaultApi20;
 import com.github.scribejava.core.oauth2.clientauthentication.ClientAuthentication;
+import com.github.scribejava.core.oauth2.clientauthentication.HttpBasicAuthenticationScheme;
 import com.github.scribejava.core.oauth2.clientauthentication.RequestBodyAuthenticationScheme;
 
 public class Asana20 extends DefaultApi20 {
@@ -28,6 +29,6 @@ public class Asana20 extends DefaultApi20 {
 
     @Override
     public ClientAuthentication getClientAuthentication() {
-        return RequestBodyAuthenticationScheme.instance();
+        return HttpBasicAuthenticationScheme.instance();
     }
 }
